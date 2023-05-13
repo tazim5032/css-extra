@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .container{
+            display: flex; /*box gula pasha-pashi dekhabe,flex use na korle upor-niche dekhato*/
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 5px; /*box gular majhkhane ekta gap thakbe*/
+            background-color: blue;
+        }
+        .box-2{
+            position: relative;
+            left: 180px; /*left er dike 180px sore jabe and box-3 er upore uthe jabe*/
+            z-index: 2;/*z-index jar beshi se upore thakbe*/
+            
+        }
+        .box-3{
+            z-index: 1;/*box-3 er upor keo uthte chaile box-3 uporei thakbe*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Position</h1>
+    <h3>More Position</h3>
+    <section class="container">
+        <div class="box box-1">
+            <h3>box-1</h3>
+        </div>
+        <div class="box box-2">
+            <h3>box-2</h3>
+        </div>
+        <div class="box box-3">
+            <h3>box-3</h3>
+        </div>
+        <div class="box box-4">
+            <h3>box-4</h3>
+        </div>
+    </section>
+</body>
+</html>
