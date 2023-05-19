@@ -1,19 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Album</title>
+
+    <style>
+        .photo-frame {
+            width: 300px;
+            height: 400px;
+            border: 10px solid goldenrod;
+            /*10px er ekta border dibe*/
+            border-radius: 10px;
+            /*border er chukha kona gula k smooth kore dibe*/
+            position: relative;
+        }
+
+        .photo-frame .photo img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .photo-detail {
+            position: absolute;
+            width: 300px;
+            height: 400px;
+            /*display: none;*/
+        }
+    </style>
 </head>
+
 <body>
     <h1>My Photo Book</h1>
     <section class="photo-album">
         <div class="photo-frame">
             <div class="photo">
-                <img src="" alt="">
+                <img src="tiger.PNG" alt="">
+            </div>
+            <div class="photo-detail">
+                <h3>Royal Bengal Tiger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ad, ea facere reprehenderit ratione
+                    soluta minima beatae iusto quod dignissimos ullam magnam numquam nam voluptatem aliquid illum
+                    expedita ipsum voluptate?</p>
             </div>
         </div>
     </section>
 </body>
+
 </html>
